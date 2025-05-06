@@ -7,47 +7,47 @@
     min-height: 100vh;
     max-width: 1200px;
     margin: 0 auto;
-  }
+}
   
-  .home-content {
+.home-content {
     flex: 1;
     padding-right: 40px;
-  }
+}
   
-  .hello {
+.hello {
     font-size: 1.2rem;
     color: #4db5ff;
     margin-bottom: 10px;
-  }
+}
   
-  .name {
+.name {
     font-size: 3.5rem;
     margin: 15px 0;
     background: linear-gradient(to right, #4db5ff, #6c63ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+}
   
-  .title {
+.title {
     font-size: 1.8rem;
     color: #ccc;
     margin-bottom: 20px;
-  }
+}
   
-  .description {
+.description {
     color: #aaa;
     font-size: 1.1rem;
     line-height: 1.7;
     margin-bottom: 30px;
     max-width: 600px;
-  }
+}
   
-  .cta-buttons {
+.cta-buttons {
     display: flex;
     gap: 20px;
-  }
+}
   
-  .btn {
+.btn {
     display: inline-block;
     padding: 12px 24px;
     border-radius: 4px;
@@ -56,72 +56,82 @@
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease;
-  }
+}
   
-  .primary-btn {
+.primary-btn {
     background-color: #4db5ff;
     color: #111;
-  }
+}
   
-  .primary-btn:hover {
+.primary-btn:hover {
     background-color: #3a9eef;
-  }
+}
   
-  .secondary-btn {
+.secondary-btn {
     background-color: transparent;
     color: #4db5ff;
     border: 1px solid #4db5ff;
-  }
+}
   
-  .secondary-btn:hover {
+.secondary-btn:hover {
     background-color: rgba(77, 181, 255, 0.1);
-  }
+}
   
-  .home-image {
+.home-image {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
   
-  .image-container {
+.image-container {
     height: 400px;
     width: 400px;
     max-width: 100%;
     border-radius: 50%;
     padding: 5px;
     background: linear-gradient(45deg, #4db5ff, #6c63ff);
-  }
+    overflow: hidden; /* Importante: mantém a imagem dentro do círculo */
+}
+
+.profile-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover; /* Mantém a proporção da imagem */
+    display: block; /* Elimina espaços indesejados */
+}
   
-  .profile-img-placeholder {
+/* Classe comentada - não precisamos mais dela */
+/* .profile-img-placeholder {
     height: 100%;
     width: 100%;
     border-radius: 50%;
     background-color: #333;
-  }
+} */
   
-  @media screen and (max-width: 960px) {
+@media screen and (max-width: 960px) {
     .home-container {
-      flex-direction: column;
-      text-align: center;
-      padding-top: 120px;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 120px;
     }
     
     .home-content {
-      padding-right: 0;
-      margin-bottom: 60px;
+        padding-right: 0;
+        margin-bottom: 60px;
     }
     
     .description {
-      max-width: 100%;
+        max-width: 100%;
     }
     
     .cta-buttons {
-      justify-content: center;
+        justify-content: center;
     }
     
     .image-container {
-      height: 300px;
-      width: 300px;
+        height: 300px;
+        width: 300px;
     }
-  }
+}
