@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
 import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -8,6 +9,14 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: false, // Whether animation should happen only once - while scrolling down
+      mirror: true, // Whether elements should animate out while scrolling past them
+    });
+  }, []);
+
   return (
     <div className="App">
       <Navbar />

@@ -35,10 +35,10 @@ function Projects() {
 
   return (
     <section id="projects" className="projects-container">
-      <h2 className="section-title">Meus Projetos</h2>
+      <h2 className="section-title" data-aos="fade-down">Meus Projetos</h2>
       <div className="projects-grid">
-        {projects.map((project) => (
-          <div className="project-card" key={project.id}>
+        {projects.map((project, index) => (
+          <div className="project-card" key={project.id} data-aos="zoom-in-up" data-aos-delay={index * 100}>
             <div className="project-image">
               <div className="img-placeholder"></div>
             </div>
