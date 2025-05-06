@@ -1,0 +1,127 @@
+.home-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 24px;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .home-content {
+    flex: 1;
+    padding-right: 40px;
+  }
+  
+  .hello {
+    font-size: 1.2rem;
+    color: #4db5ff;
+    margin-bottom: 10px;
+  }
+  
+  .name {
+    font-size: 3.5rem;
+    margin: 15px 0;
+    background: linear-gradient(to right, #4db5ff, #6c63ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    color: #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    color: #aaa;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    max-width: 600px;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .primary-btn {
+    background-color: #4db5ff;
+    color: #111;
+  }
+  
+  .primary-btn:hover {
+    background-color: #3a9eef;
+  }
+  
+  .secondary-btn {
+    background-color: transparent;
+    color: #4db5ff;
+    border: 1px solid #4db5ff;
+  }
+  
+  .secondary-btn:hover {
+    background-color: rgba(77, 181, 255, 0.1);
+  }
+  
+  .home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container {
+    height: 400px;
+    width: 400px;
+    max-width: 100%;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(45deg, #4db5ff, #6c63ff);
+  }
+  
+  .profile-img-placeholder {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: #333;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .home-container {
+      flex-direction: column;
+      text-align: center;
+      padding-top: 120px;
+    }
+    
+    .home-content {
+      padding-right: 0;
+      margin-bottom: 60px;
+    }
+    
+    .description {
+      max-width: 100%;
+    }
+    
+    .cta-buttons {
+      justify-content: center;
+    }
+    
+    .image-container {
+      height: 300px;
+      width: 300px;
+    }
+  }

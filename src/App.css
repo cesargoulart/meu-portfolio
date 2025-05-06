@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --primary-color: #4db5ff;
+  --background-color: #1f1f1f;
+  --text-color: #fff;
+  --text-secondary: #aaa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #111;
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.App {
+  position: relative;
+}
+
+main {
+  min-height: 100vh;
+}
+
+/* Para implementar o Font Awesome, vamos adicionar o link no index.html */
