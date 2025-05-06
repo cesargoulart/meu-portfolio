@@ -51,7 +51,7 @@ function Contact() {
           <h3 data-aos="fade-up" data-aos-delay="200">Envie uma Mensagem</h3>
           <form>
             <div className="form-group" data-aos="fade-up" data-aos-delay="300">
-              <input type="text" placeholder="Seu Nome" required />
+              <input type="text" placeholder="César Goulart" required />
             </div>
             <div className="form-group" data-aos="fade-up" data-aos-delay="400">
               <input type="email" placeholder="Seu Email" required />
