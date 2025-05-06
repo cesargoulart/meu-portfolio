@@ -6,7 +6,7 @@ function Home() {
     <section id="home" className="home-container">
       <div className="home-content" data-aos="fade-up">
         <p className="hello" data-aos="fade-right" data-aos-delay="100">Olá, eu sou</p>
-        <h1 className="name" data-aos="fade-left" data-aos-delay="200">Seu Nome</h1>
+        <h1 className="name" data-aos="fade-left" data-aos-delay="200">César Goulart</h1>
         <h3 className="title" data-aos="fade-up" data-aos-delay="300">Desenvolvedor Web</h3>
         <p className="description" data-aos="fade-up" data-aos-delay="400">
           Sou um desenvolvedor apaixonado por criar experiências web interativas e responsivas.
