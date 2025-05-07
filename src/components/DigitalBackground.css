@@ -1,59 +1,33 @@
 .digital-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
-  }
-  
-  .stars {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-  }
-  
-  .stars:before, .stars:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: transparent;
-    box-shadow: 0 0 10px #4db5ff, 0 0 15px #4db5ff, 0 0 20px #4db5ff, 0 0 25px #4db5ff;
-    border-radius: 50%;
-    animation: stars 8s linear infinite;
-    opacity: 0.2;
-  }
-  
-  .stars:after {
-    animation-delay: 4s;
-  }
-  
-  .grid {
-    position: absolute;
-    width: 200%;
-    height: 200%;
-    background-image: 
-      linear-gradient(to right, rgba(77, 181, 255, 0.1) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(77, 181, 255, 0.1) 1px, transparent 1px);
-    background-size: 50px 50px;
-    left: -50%;
-    top: -50%;
-    animation: grid-move 60s linear infinite;
-    opacity: 0.2;
-  }
-  
-  @keyframes stars {
-    0% { transform: scale(0); }
-    50% { transform: scale(1); }
-    100% { transform: scale(0); }
-  }
-  
-  @keyframes grid-move {
-    0% { transform: translateY(0) rotate(0deg); }
-    100% { transform: translateY(-100px) rotate(5deg); }
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* Removemos a classe .stars pois o efeito agora é gerado pelo tsparticles */
+
+.grid {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background-image: 
+    linear-gradient(to right, rgba(77, 181, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(77, 181, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  left: -50%;
+  top: -50%;
+  animation: grid-move 60s linear infinite;
+  opacity: 0.2;
+  pointer-events: none; /* Adicionado para que a grade não interfira com interações */
+}
+
+/* Removemos a animação @keyframes stars pois o efeito agora é gerado pelo tsparticles */
+
+@keyframes grid-move {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(-100px) rotate(5deg); }
+}
