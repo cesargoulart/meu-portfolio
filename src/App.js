@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import DigitalBackground from './components/DigitalBackground';
+
 
 function App() {
   useEffect(() => {
@@ -19,6 +21,7 @@ function App() {
 
   return (
     <div className="App">
+      <DigitalBackground />
       <Navbar />
       <main>
         <Home />
