@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import foto2 from '../assets/images/foto2.png';
 
 function About() {
   return (
@@ -7,7 +8,9 @@ function About() {
       <h2 className="section-title" data-aos="fade-down">Sobre Mim</h2>
       <div className="about-content">
         <div className="about-image" data-aos="fade-right" data-aos-delay="100">
-          <div className="about-img-placeholder"></div>
+          <div className="about-img-placeholder">
+            <img src={foto2} alt="Foto de perfil" className="about-img" />
+          </div>
         </div>
         <div className="about-text" data-aos="fade-left" data-aos-delay="200">
           <h3 data-aos="fade-up" data-aos-delay="300">Quem Sou</h3>
